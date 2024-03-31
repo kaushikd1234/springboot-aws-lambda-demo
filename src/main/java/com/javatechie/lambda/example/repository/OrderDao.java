@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 @Repository
 public class OrderDao {
 
-    public List<Order> buildOrders() {
+    public static List<Order> buildOrders() {
         return Stream.of(
                 new Order(101, "Mobile", 20000, 1),
                 new Order(102, "Book", 999, 2),
